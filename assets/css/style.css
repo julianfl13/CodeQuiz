@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    width: 100vw;
+    background:  #333;
+    color: #fff;
+    padding: 25px 0;
+    margin: 0 0 20px;
+}
+
+button{
+    width: 200px;
+    height: 8git0px;
+    text-align: center;
+    vertical-align: middle;
+    background: #333;
+    color: #fff;
+    transition: all 300ms;   
+}
+button:hover{
+    color: #333;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+.flex{
+    display: flex;
+}
+.row{
+flex-direction: row;
+}
+.column{
+flex-direction:column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
