@@ -12,7 +12,27 @@ setInterval(() => {
 } ,1000 );
 };
 
+const renderQuestion = ({q, a, c}) => {
+    quiz.innerHTML = '';
+
+    const div = document.createElement('div');
+    const h3 = document.createElement('h3');
+    h3.innerText = q;
+    div.append(h3);
+    a.forEach((answer, index) => {
+        const button = document.createElement('button');
+        button.innerText = answer;
+        //create correct answer functionality
+        button.addEventListener('click',() => null )
+        div.append(button);
+    });
+
+    
+    quiz.append(div);
+}
+
 const startQuiz = () => {
     startTimer();
+    renderQuestion(questions[0]);
 };
 quizButton.addEventListener('click', startQuiz);
