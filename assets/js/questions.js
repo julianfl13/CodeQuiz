@@ -1,27 +1,33 @@
 const questions = [
     {
-        q: 'What is a rock?',
+        q: 'Who painted "The Starry Night?" ',
         c: 0,
-        a: ['A rock', 'A tree', 'A cat', 'A house']
+        a: ['Van Gogh', 'Picasso', 'Damien Hirst', 'Monet']
     },
     {
-        q: 'What is a tree?',
+        q: 'Which state is a Peninsula?',
         c: 1,
-        a: ['A rock', 'A tree', 'A cat', 'A house']
+        a: ['Alaska', 'Florida', 'Hawaii', 'Texas']
     },
     {
-        q: 'What is a house?',
+        q: 'It is Always Sunny in?',
         c: 3,
-        a: ['A rock', 'A tree', 'A cat', 'A house']
+        a: ['Wuhan', 'Norwalk', 'Boise', 'Philadelphia']
     },
     {
-        q: 'What is a house?',
-        c: 3,
-        a: ['A rock', 'A tree', 'A cat', 'A house']
+        q: 'My name is?',
+        c: 2,
+        a: ['Not Julian', 'Captain Falcon', 'Julian', 'Dennis']
     },
     {
-        q: 'What is a house?',
+        q: 'What year did the Titanic sink?',
+        c: 2,
+        a: ['1905', '1920', '1912', '1990']
+    },
+    {
+        q: 'What year did the Titanic sink?',
         c: 3,
-        a: ['A rock', 'A tree', 'A cat', 'A house']
+        a: ['1905', '1920', '1913', '1990']
     }
+
 ]

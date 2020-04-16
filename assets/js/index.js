@@ -29,6 +29,7 @@ const checkAnswer = (userAnswer, correctAnswer) => {
     if(userAnswer !== correctAnswer ){
         timeLeft -= 10;
         currQuestions++;
+        handleQuiz();
         renderQuestion(questions[currQuestions]);
 
         
@@ -66,15 +67,31 @@ const renderQuestion = ({q, a, c}) => {
     div.append(buttonContainer);
     quiz.append(div);
 }
+const endQuiz = () => {
+    quiz.innerHTML = '';
+    const div = document.createElement('div');
+    const input = document.createElement('input');
+    input.id = 'quiz--highscore';
+    input.placeholder = 'Enter you Nick Name';
+    const button = document.createElement('button');
+    button.addEventListener('click', () => {
+        const input = document.getElementById('quiz--highscore');
+        const nickName = input.value;
+        localStorage.setItem('user',nickName);
+    });
+    div.append(input);
+    div.append(button);
+    quiz.append(div);
+}
 
-const startQuiz = () => {
+const handleQuiz = () => {
     startTimer();
     
 
     renderQuestion(questions[currQuestions]);
-    console.log("hello");
+    //console.log("hello");
 };
 
-quizButton.addEventListener('click', startQuiz);
+quizButton.addEventListener('click', handleQuiz);
 
 //when adding code you want it to incorporate in without breaking your other code
