@@ -25,9 +25,9 @@ const questions = [
         a: ['1905', '1920', '1912', '1990']
     },
     {
-        q: 'What year did the Titanic sink?',
-        c: 3,
-        a: ['1905', '1920', '1913', '1990']
+        q: 'Which continent covers the largest area?',
+        c: 1,
+        a: ['North America', 'Asia', 'South America', 'Africa']
     }
 
 ]
